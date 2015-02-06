@@ -23,17 +23,17 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">More BT Sites<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">BT WIFI</a>
+                            <li><a href="http://www.productsandservices.bt.com/products/infinity-broadband/?s_cid=con_FURL_broadband&utm_source=ATL&utm_medium=FURL&utm_content=A&utm_campaign=broadband#bt-wi-fi">BT WIFI</a>
                             </li>
-                            <li><a href="#">BT Cloud</a>
+                            <li><a href="https://btcloud.bt.com/">BT Cloud</a>
                             </li>
-                            <li><a href="#">BT Shop</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li><a href="#">BT Phone Book</a>
+                            <li><a href="http://www.shop.bt.com/">BT Shop</a>
                             </li>
                             <li class="divider"></li>
-                            <li><a href="#">BT Redcare</a>
+                            <li><a href="http://www.thephonebook.bt.com/publisha.content/en/index.publisha">BT Phone Book</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.redcare.bt.com/">BT Redcare</a>
                             </li>
                             </ul>
                    			 <li><a href="#">Contact Us</a>
