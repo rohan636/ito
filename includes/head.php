@@ -17,6 +17,9 @@
     <!-- Custom CSS -->
     <link href="css/business-frontpage.css" rel="stylesheet">
 
+    <!-- Custom JS -->
+    <script src="js/business.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

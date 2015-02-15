@@ -1,6 +1,6 @@
 <?php 
 include ('includes/nav.php');
-include ('includes/db.php');
+//include ('includes/db.php');
 ?>
 
     <!-- Image Background Page Header -->
@@ -9,17 +9,18 @@ include ('includes/db.php');
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+
                     <h1 class="tagline">Jay-Bee Telecom</h1>
+
                 </div>
+
             </div>
         </div>
     </header>
 
     <!-- Page Content -->
     <div class="container">
-
         <hr>
-
         <div class="row">
             <div class="col-sm-8">
                 <h2>What We Do</h2>

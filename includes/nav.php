@@ -36,7 +36,7 @@
                             <li><a href="http://www.redcare.bt.com/">BT Redcare</a>
                             </li>
                             </ul>
-                   			 <li><a href="#">Contact Us</a>
+                   			 <li><a href="contact.php">Contact Us</a>
                    			 </li>
                     </li>
                 </ul>

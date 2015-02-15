@@ -37,9 +37,14 @@ footer {
 .panel-info>.panel-heading {
     color:#999999;
     background-color:#222222;
-    
+    border-color:#222222; 
 }
 .panel {
    border-color:#222222; 
+}
+
+.Slider {
+    height: 200px;
+    width: 100%;
 }
 
