@@ -4,19 +4,12 @@
 ?>
 
 
-<!-- Code base from http://bootsnipp.com/snippets/featured/simple-user-profile -->
+<!-- Code based on http://bootsnipp.com/snippets/featured/simple-user-profile -->
 
 <!-- Page Content -->
 <div class="container">
 
-       <hr>
-       		<div class="col-md-5  toppad  pull-left ">
-	        <A href="edit.html" ><b>Edit Profile</b></A>
-	        <br/>
-	        <A href="edit.html" ><b>Logout</b></A>
-	        <br>
-			<p class=" text-info">Insert Date </p>
-        </div>
+       
         <div class="row">
             <div class="col-sm-9">
             	<h2>Account information</h2>
@@ -33,39 +26,42 @@
 	                <div class=" col-md-9 col-lg-9 "> 
 	                  <table class="table table-user-information">
 	                    <tbody>
+	                    	<form>
 	                      <tr>
-	                    	<td> Account Name <td>
-	                    	<td></td>
+	                    	<td> Account Name: </td>
+	                    	<td><input type="text" class="form-control" placeholder="Account Name" aria-describedby="basic-addon1" name="AccountName"> </input></td>
 	                      <tr>
-	                        <td>First Name:</td> <td><a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" ID="EUID" style="float:right" type="button" class="btn btn-sm btn-warning userEntry"><i class="glyphicon glyphicon-edit"></i></a></td>
-	                        <td></td>
+	                        <td>First Name:</td> 
+	                        <td> <input type="text" class="form-control" placeholder="First name" aria-describedby="basic-addon1" name="Fname"> </input></td>
 	                      </tr>
 	                      
 	                      <tr>
-	                        <td>Date of Birth:</td> <td><a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" style="float:right" type="button" class="btn btn-sm btn-warning userEntry"><i class="glyphicon glyphicon-edit"></i></a></td>
-	                        <td></td>
+	                        <td>Date of Birth:</td>
+	                        <td><input type="text" class="form-control" placeholder="DoB" aria-describedby="basic-addon1" name="DoB"> </input></td>
 	                      </tr>
-	                         <tr>
-	                             <tr>
-	                        <td>Gender:</td> <td><a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" style="float:right" type="button" class="btn btn-sm btn-warning userEntry"><i class="glyphicon glyphicon-edit"></i></a></td>
-	                        <td></td>
-	                      </tr>
-	                        <tr>
-	                        <td>Account Package:</td> <td><a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" style="float:right" type="button" class="btn btn-sm btn-warning userEntry"><i class="glyphicon glyphicon-edit"></i></a></td>
-	                        <td></td>
-	                      </tr>
+                          <tr>
+                         	<tr>
+		                        <td>Gender:</td> </td>
+		                        <td><input type="radio" name="sex" value="male" checked>Male       </input>
+								
+								<input type="radio" name="sex" value="female">Female </input></td>
+	                        </tr>
 	                      <tr>
 	                        <td>Email:</td>
-	                        <td><a href="mailto:info@support.com">info@support.com</a></td>
+	                        <td><input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1" name="Email"> </input></td>
+	                        <tr> </tr>
 	                      </tr>
-	                           
+	                      
 	                      </tr>
-	                     
+	                      <tr>
+	                      <td><input type="submit" class="btn btn-primary" value="Submit"></td>
+	                  </tr>
+	                     </form>
 	                    </tbody>
 	                  </table>
 	                  
 	                  
-	                  <a href="#" class="btn btn-primary">Upgrade account</a>
+	                  <a href="#" >Upgrade account</a>
 	                </div>
 	              
 	            </div>
@@ -79,5 +75,6 @@
 	            	</span>
 
 	            </div>
+	</div>
 
 <?php include ('includes/footer.php');?>
