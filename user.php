@@ -3,10 +3,9 @@
 	include('includes/db.php');
 
 
-	//get rid of '!' when db connected
-	if(!isset($_POST["Pupil_id"])){
-
-		$User = $db->query("SELECT * FROM User WHERE Id = $Pupil_id");
+	
+	//if(isset($_POST["Pupil_id"])){
+	$User = $db->query("SELECT * FROM User WHERE Id = $Pupil_id");
 
 ?>
 
@@ -26,7 +25,7 @@
 			   
 	        <div class="panel panel-info">
 	            <div class="panel-heading">
-	              <h3 class="panel-title"><?php $User.Fname?> </h3>
+	              <h3 class="panel-title"><?php $User->fetch_object('Fname') ?></h3>
 
 	            </div>
 	            <div class="panel-body">
@@ -35,33 +34,27 @@
 	                <div class=" col-md-9 col-lg-9 "> 
 	                  <table class="table table-user-information">
 	                    <tbody>
-	                    	<tr>
-	                    		<td> Account Name:<td>
-	                    			<td><p> </p></td>
-	                    			<tr>
-	                    				<td>First Name:</td> <td>
-	                    				<td><p> <?php db-> ?></p></td>
-	                    			</tr>
+	                    		<tr>
+	                    			<td>First Name:</td> <td>
+	                    			<td><p> <?php $User->fetch_object('Fname') ?> ?></p></td>
+	                    		</tr>
 
-	                    			<tr>
-	                    				<td>Date of Birth:</td> 
-	                    				<td><p> </p></td>
-	                    			</tr>
-	                    			<tr>
-	                    				<tr>
-	                    					<td>Gender:</td> 
-	                    					<td><p> </p></td>
-	                    				</tr>
-	                    				<tr>
-	                    					<td>Account Package:</td> 
-	                    					<td><p> </p></td>
-	                    				</tr>
-	                    				<tr>
-	                    					<td>Email:</td>
-	                    					<td><a href="#">email.com</a></td>
-	                    				</tr>
+	                    		<tr>
+	                    			<td>Last Name:</td> 
+	                    			<td><p> <?php $User->fetch_object('Lname') ?> </p></td>
+	                    		</tr>
+                    			<tr>
+                    				<td>Email:</td>
+                    				<td><?php $User->fetch_object('email') ?></td>
+                    			</tr>
+	                    		<tr>
+                    			<tr>
+                    				<td>Account Package:</td> 
+                    				<td><p><?php $User->fetch_object('type') ?> </p></td>
+                    			</tr>
 
-	                    			</tr>
+
+	                    		</tr>
 	                    	</tr>
 	                     
 	                    </tbody>

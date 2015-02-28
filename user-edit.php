@@ -1,6 +1,7 @@
 <?php 
 	include ('includes/nav.php');
 	//include('includes/db.php');
+	$User = $db->query("SELECT * FROM User WHERE Id = $Pupil_id");
 ?>
 
 
@@ -17,7 +18,7 @@
 			   
 	        <div class="panel panel-info">
 	            <div class="panel-heading">
-	              <h3 class="panel-title">SELECT ACOUNTNAME</h3>
+	              <h3 class="panel-title"><?php $User->fetch_object('Fname') $User->fetch_object('Lname') ?></h3>
 
 	            </div>
 	            <div class="panel-body">
@@ -27,40 +28,36 @@
 	                  <table class="table table-user-information">
 	                    <tbody>
 	                    	<form>
-	                      <tr>
-	                    	<td> Account Name: </td>
-	                    	<td><input type="text" class="form-control" placeholder="Account Name" aria-describedby="basic-addon1" name="AccountName"> </input></td>
-	                      <tr>
-	                        <td>First Name:</td> 
-	                        <td> <input type="text" class="form-control" placeholder="First name" aria-describedby="basic-addon1" name="Fname"> </input></td>
-	                      </tr>
-	                      
-	                      <tr>
-	                        <td>Date of Birth:</td>
-	                        <td><input type="text" class="form-control" placeholder="DoB" aria-describedby="basic-addon1" name="DoB"> </input></td>
-	                      </tr>
-                          <tr>
-                         	<tr>
-		                        <td>Gender:</td> </td>
-		                        <td><input type="radio" name="sex" value="male" checked>Male       </input>
-								
-								<input type="radio" name="sex" value="female">Female </input></td>
-	                        </tr>
-	                      <tr>
-	                        <td>Email:</td>
-	                        <td><input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1" name="Email"> </input></td>
-	                        <tr> </tr>
-	                      </tr>
-	                      
-	                      </tr>
-	                      <tr>
-	                      <td><input type="submit" class="btn btn-primary" value="Submit"></td>
-	                  </tr>
+	                    	<tr>
+	                    		<tr>
+	                    			<td>First Name:</td>
+	                    			<td> <input type="text" class="form-control" placeholder="First name" aria-describedby="basic-addon1" name="Fname"> </input></td>
+	                    		</tr>
+
+	                    		<tr>
+	                    			<td>Last Name:</td>
+	                    			<td><input type="text" class="form-control" placeholder="DoB" aria-describedby="basic-addon1" name="Lname"> </input></td>
+	                    		</tr>
+	                    		<tr>
+                    			<tr>
+                    				<td>Email:</td>
+                    				<td><input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1" name="Email"> </input></td>
+                    			</tr>
+                    			<tr>
+                    				<td>Password:</td>
+                    				<td><input type="text" class="form-control" placeholder="password" aria-describedby="basic-addon1" name="password"> </input></td>
+                    			</tr>
+
+	                    		</tr>
+	                    		<tr>
+	                    			<td><input type="submit" class="btn btn-primary" value="Submit"></td>
+	                    		</tr>
+	                    	</tr>
 	                     </form>
 	                    </tbody>
 	                  </table>
 	                  
-	                  
+	                  <!-- Add link to plans page -->
 	                  <a href="#" >Upgrade account</a>
 	                </div>
 	              
