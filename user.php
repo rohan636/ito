@@ -1,9 +1,12 @@
 <?php 
 	include ('includes/nav.php');
-	//include('includes/db.php');
+	include('includes/db.php');
+
 
 	//get rid of '!' when db connected
 	if(!isset($_POST["Pupil_id"])){
+
+		$User = $db->query("SELECT * FROM User WHERE Id = $Pupil_id");
 
 ?>
 
@@ -14,10 +17,7 @@
        <hr>
        		<div class="col-md-5  toppad  pull-left ">
 	        <A href="user-edit.php" ><b>Edit Profile</b></A>
-	        <br/>
-	        <A href="edit.html" ><b>Logout</b></A>
-	        <br/>
-			<p class=" text-info">Insert Date </p>
+
         </div>
         <div class="row">
             <div class="col-sm-9">
@@ -26,7 +26,7 @@
 			   
 	        <div class="panel panel-info">
 	            <div class="panel-heading">
-	              <h3 class="panel-title">SELECT ACOUNTNAME</h3>
+	              <h3 class="panel-title"><?php $User.Fname?> </h3>
 
 	            </div>
 	            <div class="panel-body">
@@ -35,43 +35,43 @@
 	                <div class=" col-md-9 col-lg-9 "> 
 	                  <table class="table table-user-information">
 	                    <tbody>
-	                      <tr>
-	                    	<td> Account Name:<td>
-	                    	<td><p> </p></td>
-	                      <tr>
-	                        <td>First Name:</td> <td>
-	                        <td><p> </p></td>
-	                      </tr>
-	                      
-	                      <tr>
-	                        <td>Date of Birth:</td> 
-	                        <td><p> </p></td>
-	                      </tr>
-	                         <tr>
-	                             <tr>
-	                        <td>Gender:</td> 
-	                        <td><p> </p></td>
-	                      </tr>
-	                        <tr>
-	                        <td>Account Package:</td> 
-	                        <td><p> </p></td>
-	                      </tr>
-	                      <tr>
-	                        <td>Email:</td>
-	                        <td><a href="#">email.com</a></td>
-	                      </tr>
-	                           
-	                      </tr>
+	                    	<tr>
+	                    		<td> Account Name:<td>
+	                    			<td><p> </p></td>
+	                    			<tr>
+	                    				<td>First Name:</td> <td>
+	                    				<td><p> <?php db-> ?></p></td>
+	                    			</tr>
+
+	                    			<tr>
+	                    				<td>Date of Birth:</td> 
+	                    				<td><p> </p></td>
+	                    			</tr>
+	                    			<tr>
+	                    				<tr>
+	                    					<td>Gender:</td> 
+	                    					<td><p> </p></td>
+	                    				</tr>
+	                    				<tr>
+	                    					<td>Account Package:</td> 
+	                    					<td><p> </p></td>
+	                    				</tr>
+	                    				<tr>
+	                    					<td>Email:</td>
+	                    					<td><a href="#">email.com</a></td>
+	                    				</tr>
+
+	                    			</tr>
+	                    	</tr>
 	                     
 	                    </tbody>
 	                  </table>
 	                  
-	                  
-	                  <a href="#" class="btn btn-primary">Upgrade account</a>
+	                <a href="#" class="btn btn-primary">Change Plan</a>
+
 	                </div>
 	              
 	            </div>
-
 
 	            <div class="panel-footer">
 	            	<a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
