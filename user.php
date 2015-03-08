@@ -5,7 +5,7 @@
 
 	
 	//if(isset($_POST["Pupil_id"])){
-	$User = $db->query("SELECT * FROM User WHERE Id = $Pupil_id");
+	//$User = $db->query("SELECT * FROM User WHERE Id = $Pupil_id");
 
 ?>
 

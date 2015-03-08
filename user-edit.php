@@ -1,7 +1,7 @@
 <?php 
 	include ('includes/nav.php');
 	//include('includes/db.php');
-	$User = $db->query("SELECT * FROM User WHERE Id = $Pupil_id");
+	//$User = $db->query("SELECT * FROM User WHERE Id = $Pupil_id");
 ?>
 
 
@@ -45,7 +45,7 @@
                     			</tr>
                     			<tr>
                     				<td>Password:</td>
-                    				<td><input type="text" class="form-control" placeholder="password" aria-describedby="basic-addon1" name="password"> </input></td>
+                    				<td><input type="password" class="form-control" placeholder="password" aria-describedby="basic-addon1" name="password"> </input></td>
                     			</tr>
 
 	                    		</tr>
